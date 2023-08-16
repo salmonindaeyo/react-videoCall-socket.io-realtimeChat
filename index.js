@@ -10,7 +10,7 @@ const cors = require("cors");
 // สร้างวัตถุ socket.io และผูกกับเซิร์ฟเวอร์ที่สร้างไว้ พร้อมกำหนดค่า CORS
 const io = require("socket.io")(server, {
 	cors: {
-		origin: "https://368a-202-28-7-4.ngrok-free.app",
+		origin: "*",
 			// origin: "*",
 		methods: ["GET", "POST"],
 		allowedHeaders: ["ngrok-skip-browser-warning"]
