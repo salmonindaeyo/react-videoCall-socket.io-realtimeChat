@@ -11,6 +11,8 @@ const socket = io(process.env.base_url_api,
         'ngrok-skip-browser-warning': true,
       } 
 });
+
+console.log(process.env.base_url_api)
 const ContextProvider = ({ children }) => {
   const [callAccepted, setCallAccepted] = useState(false);
   const [callEnded, setCallEnded] = useState(false);
