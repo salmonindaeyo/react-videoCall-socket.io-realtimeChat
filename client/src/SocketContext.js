@@ -5,14 +5,14 @@ import Peer from 'simple-peer';
 const SocketContext = createContext();
 
 // const socket = io('http://localhost:5000');
-const socket = io(process.env.base_url_api,
+const socket = io("https://server-react-video-call.vercel.app",
 {
     extraHeaders: {
         'ngrok-skip-browser-warning': true,
       } 
 });
 
-console.log(process.env.base_url_api)
+console.log("https://server-react-video-call.vercel.app")
 const ContextProvider = ({ children }) => {
   const [callAccepted, setCallAccepted] = useState(false);
   const [callEnded, setCallEnded] = useState(false);
